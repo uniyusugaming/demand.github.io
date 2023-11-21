@@ -5,6 +5,7 @@ window.onload = function() {
   var firebaseConfig = {
     apiKey: "AIzaSyBf5EA6EGLAbztXAhq-13srxSYcYHOuCnw",
     authDomain: "demand-18409.firebaseapp.com",
+    databaseURL: "https://demand-18409-default-rtdb.asia-southeast1.firebasedatabase.app",
     projectId: "demand-18409",
     storageBucket: "demand-18409.appspot.com",
     messagingSenderId: "935389606465",
@@ -39,7 +40,7 @@ window.onload = function() {
 
       var title = document.createElement('h1')
       title.setAttribute('id', 'title')
-      title.textContent = 'MemeChat 2.0'
+      title.textContent = 'consumer demand explorer'
 
       title_inner_container.append(title)
       title_container.append(title_inner_container)
@@ -68,7 +69,7 @@ window.onload = function() {
       var join_input = document.createElement('input')
       join_input.setAttribute('id', 'join_input')
       join_input.setAttribute('maxlength', 15)
-      join_input.placeholder = 'No.... It\'s Patrick Star'
+      join_input.placeholder = 'name or email'
       // Every time we type into the join_input
       join_input.onkeyup  = function(){
         // If the input we have is longer that 0 letters
